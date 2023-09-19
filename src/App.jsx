@@ -12,15 +12,7 @@ function App() {
 
   return (
     <>
-      {showThankYouPage ? (
-        <ThankYou rating={rating} />
-      ) : (
-        <Rating 
-        rating={rating} 
-        setRating={setRating} 
-        setShowThankYouPage={setShowThankYouPage} 
-        />
-      )}
+      {showThankYouPage ? ( <ThankYou rating={rating} /> ) : ( <Rating rating={rating} setRating={setRating} setShowThankYouPage={setShowThankYouPage} /> )}
     </>
   );
 }
